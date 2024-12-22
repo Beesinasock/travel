@@ -1,0 +1,127 @@
+/* Packages Page Styles */
+.packages-header {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    background: linear-gradient(90deg, #85e085, #ffeb99);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Navbar Styles */
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: fadeIn 2s ease-out;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff758c; /* Hover effect with vibrant color */
+    transform: translateY(-5px);
+}
+
+nav ul li a.active {
+    color: #ff758c; /* Active page link highlight */
+    font-weight: bold;
+    border-bottom: 2px solid #ff758c; /* Adds underline on active page */
+}
+
+/* Navbar hover effect */
+nav ul li a.active:hover {
+    color: #ffeb99; /* Color on hover when active */
+    transform: scale(1.1);
+}
+
+/* Packages Container */
+.packages-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Package Card Styles */
+.package-card {
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ff758c, #ffeb99);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.package-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.package-card h2 {
+    margin: 15px 0 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.package-card .price {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.package-card button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #85e085;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.package-card button:hover {
+    background: #67c767;
+}
+
+/* Keyframes for Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
